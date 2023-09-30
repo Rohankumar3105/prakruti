@@ -9,47 +9,16 @@ Original file is located at
 
 import streamlit as st
 
-# Add a title to your web app
-st.title("Health Suggestions")
+# Title
+st.title("Query Processor App")
 
-# Add text to the app
-st.write("Food and exercise suggestion based on your Prakruti")
+# User Input
+query = st.text_input("Enter your query:")
 
-# Add a header
-st.header("User Input")
-
-# Add a text input field
-user_input = st.text_input("Enter your name:")
-
-# Display user input
-st.write("Hello, " + user_input + "!")
-
-# Add a sidebar
-st.sidebar.header("Sidebar")
-st.sidebar.write("You can add additional content here.")
-
-# Add a plot or chart
-import numpy as np
-
-
-
-# Add data display
-# st.subheader("Data Display")
-# st.dataframe({"Column 1": [1, 2, 3], "Column 2": [4, 5, 6]})
-
-# Add a button
-# if st.button("Click Me"):
-#     st.write("Button clicked!")
-
-# Add checkboxes
-# if st.checkbox("Show/Hide"):
-#     st.write("This content can be toggled.")
-
-# Add selectbox
-option = st.selectbox("What is your body type:", ["Fat", "Fit", "Lean"])
-st.write("You selected:", option)
-
-# Add radio buttons
-radio_option = st.radio("Choose an option:", ["Fat", "Fit", "Lean"])
-st.write("You chose:", radio_option)
-
+# Processing the Input
+if st.button("Process"):
+    # Call the Python file to process the query
+    from process_query import process_query
+    result = process_query(query)
+    st.write("Processed Result:")
+    st.write(result)
