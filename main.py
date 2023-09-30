@@ -1,5 +1,5 @@
-# pip install git+https://github.com/huggingface/transformers.git
-import transformers
+!pip install transformers
+
 from transformers import pipeline
 import pandas as pd
 qa_pipeline = pipeline("question-answering", model="bert-large-uncased-whole-word-masking-finetuned-squad")
