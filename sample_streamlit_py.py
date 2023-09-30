@@ -10,10 +10,10 @@ Original file is located at
 import streamlit as st
 
 # Add a title to your web app
-st.title("Simple Streamlit App")
+st.title("Health Suggestions")
 
 # Add text to the app
-st.write("This is a simple Streamlit app.")
+st.write("Food and exercise suggestion based on your Prakruti")
 
 # Add a header
 st.header("User Input")
