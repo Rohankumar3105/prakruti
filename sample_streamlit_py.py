@@ -19,7 +19,7 @@ st.write("Food and exercise suggestion based on your Prakruti")
 st.header("User Input")
 
 # Add a text input field
-user_input = st.text_input("Enter your name:", "Your Name")
+user_input = st.text_input("Enter your name:")
 
 # Display user input
 st.write("Hello, " + user_input + "!")
@@ -29,14 +29,9 @@ st.sidebar.header("Sidebar")
 st.sidebar.write("You can add additional content here.")
 
 # Add a plot or chart
-import matplotlib.pyplot as plt
 import numpy as np
 
-st.subheader("Plot")
-x = np.linspace(0, 10, 100)
-y = np.sin(x)
-plt.plot(x, y)
-st.pyplot(plt)
+
 
 # Add data display
 st.subheader("Data Display")
