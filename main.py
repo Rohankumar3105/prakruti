@@ -18,6 +18,9 @@ def prints(questions):
     # print(f"Confidence: {response['score']:.4f}")
     # print()
     return response['answer']
-result = prints(stream2.query)
-print(result)
-stream2.receive_data(result)
+# result = prints(stream2.query)
+# print(result)
+# stream2.receive_data(result)
+def question(query):
+    result = prints(query)
+    return result
