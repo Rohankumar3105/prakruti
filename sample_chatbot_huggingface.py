@@ -8,7 +8,7 @@ Original file is located at
 """
 
 # !pip install transformers
-
+import transformers
 
 from transformers import pipeline
 import pandas as pd
