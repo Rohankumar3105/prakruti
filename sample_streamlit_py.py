@@ -7,8 +7,6 @@ Original file is located at
     https://colab.research.google.com/drive/1BomiatbwOeO4Co7R7ta1uE4vxq0YbfhR
 """
 
-!pip install streamlit
-
 import streamlit as st
 
 # Add a title to your web app
