@@ -9,7 +9,6 @@ Original file is located at
 
 !pip install transformers
 
-!pip install streamlit
 
 from transformers import pipeline
 import pandas as pd
