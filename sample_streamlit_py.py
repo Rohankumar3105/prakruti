@@ -34,22 +34,22 @@ import numpy as np
 
 
 # Add data display
-st.subheader("Data Display")
-st.dataframe({"Column 1": [1, 2, 3], "Column 2": [4, 5, 6]})
+# st.subheader("Data Display")
+# st.dataframe({"Column 1": [1, 2, 3], "Column 2": [4, 5, 6]})
 
 # Add a button
-if st.button("Click Me"):
-    st.write("Button clicked!")
+# if st.button("Click Me"):
+#     st.write("Button clicked!")
 
 # Add checkboxes
-if st.checkbox("Show/Hide"):
-    st.write("This content can be toggled.")
+# if st.checkbox("Show/Hide"):
+#     st.write("This content can be toggled.")
 
 # Add selectbox
-option = st.selectbox("Select an option:", ["Option 1", "Option 2", "Option 3"])
+option = st.selectbox("What is your body type:", ["Fat", "Fit", "Lean"])
 st.write("You selected:", option)
 
 # Add radio buttons
-radio_option = st.radio("Choose an option:", ["A", "B", "C"])
+radio_option = st.radio("Choose an option:", ["Fat", "Fit", "Lean"])
 st.write("You chose:", radio_option)
 
