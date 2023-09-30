@@ -1,3 +1,4 @@
+!pip install --upgrade pip
 !pip install transformers
 
 from transformers import pipeline
