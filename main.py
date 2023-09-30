@@ -1,7 +1,6 @@
-!pip install transformers
+pip install git+https://github.com/huggingface/transformers.git
 from transformers import pipeline
 import pandas as pd
-import stream2
 qa_pipeline = pipeline("question-answering", model="bert-large-uncased-whole-word-masking-finetuned-squad")
 def chatbot(question):
     # Provide a context or passage where the answer can be found
